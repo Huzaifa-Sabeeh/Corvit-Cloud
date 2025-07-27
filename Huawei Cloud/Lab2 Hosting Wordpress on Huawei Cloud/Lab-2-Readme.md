@@ -1,12 +1,11 @@
 
-            <h1>Enterprise WordPress Hosting on Huawei Cloud</h1>
+<h1>Enterprise WordPress Hosting on Huawei Cloud</h1>
             <p class="report-meta">A Comprehensive Implementation Guide</p>
             <p class="report-meta"><strong>Prepared by:</strong> Huzaifa Sabeeh</p>
             <p class="report-meta"><strong>Date:</strong> October 26, 2023</p>
   
 
-        <!-- Executive Summary Section -->
-        <h2>1. Executive Summary</h2>
+<h2>1. Executive Summary</h2>
         <p>
             Hosting WordPress for an enterprise requires more than a single virtual machine. It demands an architecture that is <strong>secure, scalable, resilient, and high-performing</strong>. Huawei Cloud provides a comprehensive suite of services that can be orchestrated to build a robust hosting environment for business-critical WordPress sites.
         </p>
@@ -15,7 +14,7 @@
         </p>
 
         <!-- Architectural Overview Section -->
-        <h2>2. Proposed Architecture for Enterprise WordPress</h2>
+<h2>2. Proposed Architecture for Enterprise WordPress</h2>
         <p>
             A simple, single-server setup is inadequate for enterprise needs. We recommend a decoupled, scalable architecture composed of the following Huawei Cloud services:
         </p>
@@ -29,7 +28,7 @@
             <li><strong>Web Application Firewall (WAF):</strong> Placed in front of the ELB to protect the WordPress site from common web exploits like SQL injection and cross-site scripting (XSS).</li>
         </ul>
 
-            <h3>Architectural Diagram</h3>
+<h3>Architectural Diagram</h3>
             <pre>
 [ End Users ]
       |
@@ -53,9 +52,9 @@
             </pre>
 
         <!-- Implementation Guide Section -->
-        <h2>3. Step-by-Step Implementation Guide</h2>
+<h2>3. Step-by-Step Implementation Guide</h2>
         
-        <h3>Phase 1: Foundational Infrastructure Setup</h3>
+<h3>Phase 1: Foundational Infrastructure Setup</h3>
         <ol>
             <li><strong>Create a VPC:</strong> In the Huawei Cloud console, navigate to VPC and create a new VPC (e.g., <code>vpc-wordpress</code>) with at least two subnets in different Availability Zones (AZs) for high availability.</li>
             <li>
@@ -77,7 +76,7 @@
             </li>
         </ol>
 
-        <h3>Phase 2: Preparing the WordPress Server Image</h3>
+<h3>Phase 2: Preparing the WordPress Server Image</h3>
         <p>Creating a "golden image" is crucial for auto-scaling. This ensures every new server launched is identical.</p>
         <ol>
             <li><strong>Launch a Temporary ECS:</strong> Create a single ECS instance in your VPC. Use a Linux distribution like CentOS or Ubuntu. Assign it the <code>sg-web-servers</code> security group.</li>
@@ -105,7 +104,7 @@ define( 'DB_HOST', 'your_rds_endpoint.mysql.ap-southeast-1.huaweicloud.com' );</
             <li><strong>Create a Custom Image:</strong> Once the ECS is fully configured and tested, shut it down and create a custom image from it in the ECS console. Name it something descriptive, like <code>wordpress-nginx-golden-image-v1</code>. Terminate the temporary ECS after the image is created.</li>
         </ol>
 
-        <h3>Phase 3: Deploying the Scalable Architecture</h3>
+<h3>Phase 3: Deploying the Scalable Architecture</h3>
         <ol>
             <li>
                 <strong>Create an Auto Scaling Configuration:</strong>
@@ -134,7 +133,7 @@ define( 'DB_HOST', 'your_rds_endpoint.mysql.ap-southeast-1.huaweicloud.com' );</
             </li>
         </ol>
 
-        <h3>Phase 4: Final Configuration and Security</h3>
+<h3>Phase 4: Final Configuration and Security</h3>
         <ol>
             <li><strong>Configure DNS:</strong> Go to your domain registrar or Huawei Cloud DNS and create a CNAME or A record pointing your domain (e.g., <code>www.your-enterprise.com</code>) to the public IP address of the ELB.</li>
             <li>
@@ -150,7 +149,7 @@ define( 'DB_HOST', 'your_rds_endpoint.mysql.ap-southeast-1.huaweicloud.com' );</
         </ol>
 
         <!-- Management and Best Practices Section -->
-        <h2>4. Ongoing Management and Best Practices</h2>
+<h2>4. Ongoing Management and Best Practices</h2>
         <ul>
             <li><strong>Monitoring:</strong> Use Huawei Cloud Eye to monitor the health of your ELB, ECS instances (CPU, Memory), and RDS. Set alarms for critical metrics.</li>
             <li><strong>Backups:</strong>
@@ -164,7 +163,7 @@ define( 'DB_HOST', 'your_rds_endpoint.mysql.ap-southeast-1.huaweicloud.com' );</
         </ul>
 
         <!-- Conclusion Section -->
-        <h2>5. Conclusion</h2>
+<h2>5. Conclusion</h2>
         <p>
             By following this guide, an enterprise can deploy a WordPress application on Huawei Cloud that is not just a website but a robust, resilient, and secure digital platform. This architecture provides high availability through multi-AZ deployment, automatic scaling to handle traffic spikes, and layered security with WAF and isolated networking. This setup empowers enterprises to focus on creating content and value, confident that their underlying infrastructure is built for performance and reliability.
         </p>
