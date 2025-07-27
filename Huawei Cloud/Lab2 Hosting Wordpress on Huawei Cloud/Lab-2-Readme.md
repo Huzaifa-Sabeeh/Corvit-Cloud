@@ -50,7 +50,6 @@
 (Stores media uploads, static assets)
             </pre>
 
-        <!-- Implementation Guide Section -->
 <h2>3. Step-by-Step Implementation Guide</h2>
         
 <h3>Phase 1: Foundational Infrastructure Setup</h3>
@@ -147,7 +146,6 @@ define( 'DB_HOST', 'your_rds_endpoint.mysql.ap-southeast-1.huaweicloud.com' );</
             <li><strong>Complete WordPress Installation:</strong> Access your domain via a browser. You should see the famous WordPress five-minute installation screen. Complete it to create your admin user.</li>
         </ol>
 
-        <!-- Management and Best Practices Section -->
 <h2>4. Ongoing Management and Best Practices</h2>
         <ul>
             <li><strong>Monitoring:</strong> Use Huawei Cloud Eye to monitor the health of your ELB, ECS instances (CPU, Memory), and RDS. Set alarms for critical metrics.</li>
