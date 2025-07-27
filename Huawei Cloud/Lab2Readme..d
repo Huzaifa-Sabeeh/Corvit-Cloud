@@ -1,97 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise WordPress Hosting on Huawei Cloud</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 960px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.05);
-        }
-        header {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        h1 {
-            color: #d73a49; /* Huawei Red */
-            margin: 0;
-        }
-        h2 {
-            color: #0366d6;
-            border-bottom: 1px solid #eaecef;
-            padding-bottom: 5px;
-            margin-top: 40px;
-        }
-        h3 {
-            color: #24292e;
-            margin-top: 30px;
-        }
-        p, li {
-            font-size: 16px;
-        }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-        code {
-            background-color: #eef;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 15px;
-        }
-        pre {
-            background-color: #24292e;
-            color: #f6f8fa;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        pre code {
-            background-color: transparent;
-            padding: 0;
-            font-size: 14px;
-        }
-        strong {
-            color: #24292e;
-        }
-        .report-meta {
-            font-size: 0.9em;
-            color: #586069;
-        }
-        .architecture-diagram {
-            border: 1px dashed #ccc;
-            padding: 20px;
-            margin: 20px 0;
-            text-align: center;
-            background-color: #fafafa;
-        }
-    </style>
-</head>
-<body>
 
-    <div class="container">
-        <header>
             <h1>Enterprise WordPress Hosting on Huawei Cloud</h1>
             <p class="report-meta">A Comprehensive Implementation Guide</p>
             <p class="report-meta"><strong>Prepared by:</strong> Huzaifa Sabeeh</p>
             <p class="report-meta"><strong>Date:</strong> October 26, 2023</p>
-        </header>
+  
 
         <!-- Executive Summary Section -->
         <h2>1. Executive Summary</h2>
@@ -117,7 +29,6 @@
             <li><strong>Web Application Firewall (WAF):</strong> Placed in front of the ELB to protect the WordPress site from common web exploits like SQL injection and cross-site scripting (XSS).</li>
         </ul>
 
-        <div class="architecture-diagram">
             <h3>Architectural Diagram</h3>
             <pre>
 [ End Users ]
@@ -140,7 +51,6 @@
 [ Object Storage Service (OBS) ]
 (Stores media uploads, static assets)
             </pre>
-        </div>
 
         <!-- Implementation Guide Section -->
         <h2>3. Step-by-Step Implementation Guide</h2>
@@ -259,7 +169,5 @@ define( 'DB_HOST', 'your_rds_endpoint.mysql.ap-southeast-1.huaweicloud.com' );</
             By following this guide, an enterprise can deploy a WordPress application on Huawei Cloud that is not just a website but a robust, resilient, and secure digital platform. This architecture provides high availability through multi-AZ deployment, automatic scaling to handle traffic spikes, and layered security with WAF and isolated networking. This setup empowers enterprises to focus on creating content and value, confident that their underlying infrastructure is built for performance and reliability.
         </p>
 
-    </div>
 
-</body>
-</html>
+
