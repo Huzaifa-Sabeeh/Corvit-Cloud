@@ -1,29 +1,28 @@
+<title>Huawei Cloud Storage Services Lab Report</title>
 
-    <title>Huawei Cloud Storage Services Lab Report</title>
 
+<h1>Huawei Cloud Storage Services Lab Report</h1>
+<p><strong>Prepared by:</strong> Huzaifa Sabeeh</p>
 
-    <h1>Huawei Cloud Storage Services Lab Report</h1>
-    <p><strong>Prepared by:</strong> Huzaifa Sabeeh</p>
+<h2>Introduction</h2>
+<p>This document details the hands-on lab exercises I completed to gain practical experience with Huawei Cloud's core storage services. The lab covered three main services: Elastic Volume Service (EVS), Object Storage Service (OBS), and Scalable File Service (SFS). The objective was to understand their distinct functionalities, from block storage for servers to object storage for unstructured data and shared file systems for collaborative access.</p>
 
-    <h2>Introduction</h2>
-    <p>This document details the hands-on lab exercises I completed to gain practical experience with Huawei Cloud's core storage services. The lab covered three main services: Elastic Volume Service (EVS), Object Storage Service (OBS), and Scalable File Service (SFS). The objective was to understand their distinct functionalities, from block storage for servers to object storage for unstructured data and shared file systems for collaborative access.</p>
+<h2>Part 1: Elastic Volume Service (EVS) Practice</h2>
+<p>This section covers EVS, the persistent block storage service for ECS (Elastic Cloud Server). The goal was to learn how to purchase, attach, initialize, and manage EVS disks on both Windows and Linux servers, and to utilize the snapshot feature.</p>
 
-    <h2>Part 1: Elastic Volume Service (EVS) Practice</h2>
-    <p>This section covers EVS, the persistent block storage service for ECS (Elastic Cloud Server). The goal was to learn how to purchase, attach, initialize, and manage EVS disks on both Windows and Linux servers, and to utilize the snapshot feature.</p>
+<h3>1.1 Attaching an EVS Disk to a Windows ECS</h3>
+<p>The primary goal here was to test the portability of an EVS data disk between two separate servers.</p>
 
-    <h3>1.1 Attaching an EVS Disk to a Windows ECS</h3>
-    <p>The primary goal here was to test the portability of an EVS data disk between two separate servers.</p>
+<h4>Environment Setup:</h4>
+<ul>
+<li>Created a Virtual Private Cloud (VPC) in the AP-Singapore region.</li>
+<li>Provisioned two Windows Server 2012 R2 ECS instances: <code>ecs-vivi</code> and <code>ecs-test</code>.</li>
+</ul>
 
-    <h4>Environment Setup:</h4>
-    <ul>
-        <li>Created a Virtual Private Cloud (VPC) in the AP-Singapore region.</li>
-        <li>Provisioned two Windows Server 2012 R2 ECS instances: <code>ecs-vivi</code> and <code>ecs-test</code>.</li>
-    </ul>
-
-    <h4>Purchasing an EVS Disk:</h4>
-    <ul>
-        <li>Navigated to the Elastic Volume Service page and purchased a new 20 GB General Purpose SSD data disk, named <code>volume-vivi</code>.</li>
-    </ul>
+<h4>Purchasing an EVS Disk:</h4>
+<ul>
+<li>Navigated to the Elastic Volume Service page and purchased a new 20 GB General Purpose SSD data disk, named <code>volume-vivi</code>.</li>
+</ul>
 
     <h4>Attaching and Initializing on ecs-vivi:</h4>
     <ul>
