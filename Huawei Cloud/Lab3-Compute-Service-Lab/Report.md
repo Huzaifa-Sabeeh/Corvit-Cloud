@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h1>Huawei Cloud Compute Service Lab Report</h1>
+<h1>Syed Huzaifa Sabeeh Shah</h1>
 </head>
 <body>
 <h1>Huawei Cloud Compute Service Lab Report</h1>
