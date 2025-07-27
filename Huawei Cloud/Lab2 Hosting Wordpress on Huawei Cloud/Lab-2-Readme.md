@@ -13,7 +13,6 @@
             This report outlines a best-practice architecture and a step-by-step guide for deploying a fault-tolerant WordPress solution on Huawei Cloud. The proposed architecture leverages a managed database, load balancing, auto-scaling, and object storage to ensure high availability and optimal performance, while services like Web Application Firewall (WAF) provide an essential security layer. This approach moves beyond a single point of failure and creates a dynamic infrastructure that can handle fluctuating traffic loads effectively.
         </p>
 
-        <!-- Architectural Overview Section -->
 <h2>2. Proposed Architecture for Enterprise WordPress</h2>
         <p>
             A simple, single-server setup is inadequate for enterprise needs. We recommend a decoupled, scalable architecture composed of the following Huawei Cloud services:
